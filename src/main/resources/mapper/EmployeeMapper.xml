@@ -92,7 +92,7 @@
     </if>
     <include refid="WithDept_Column_List" />
     from emp e
-    left join dept d on e.'d_id'=d.'dept_id'
+    left join dept d on e.d_id=d.dept_id
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -106,7 +106,7 @@
     select
     <include refid="WithDept_Column_List" />
     from emp e
-    left join dept d on e.'d_id'=d.'dept_id'
+    left join dept d on e.d_id = d.dept_id
     where emp_id = #{empId,jdbcType=INTEGER}
   </select>
   <select id="selectByExample" parameterType="com.wrq.manage.bean.EmployeeExample" resultMap="BaseResultMap">
