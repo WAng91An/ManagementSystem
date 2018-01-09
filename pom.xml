@@ -79,6 +79,13 @@
       <version>0.9.2</version>
     </dependency>
 
+    <!-- 返回json字符串 -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.8.8</version>
+    </dependency>
+
     <!-- jstl servlet-api -->
     <dependency>
       <groupId>jstl</groupId>
@@ -93,6 +100,7 @@
       <scope>provided</scope>
     </dependency>
 
+    <!--jsp-->
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>javax.servlet.jsp-api</artifactId>
