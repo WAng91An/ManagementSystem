@@ -60,6 +60,17 @@ public class EmployeeController {
         return Msg.success().add("pageInfo",pageInfo);
     }
 
+    @RequestMapping("/emp")
+    @ResponseBody
+    public Msg addEmp(Employee employee){
+        int result = iEmployeeService.addEmp(employee);
+        System.out.println(result);
+        if(result != 0){
+            return this.getEmpsWithJson(1);
+        }else{
+            return Msg.fail().add("errMsg","新增信息失败");
+        }
+    }
 
     /**
      * 传统方式

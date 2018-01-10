@@ -11,4 +11,6 @@ public interface IEmployeeService {
 
     public List<Employee> getAll();
 
+    public int addEmp(Employee employee);
+
 }

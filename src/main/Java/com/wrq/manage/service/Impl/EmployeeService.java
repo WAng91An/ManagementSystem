@@ -19,4 +19,10 @@ public class EmployeeService implements IEmployeeService {
         public List<Employee> getAll(){
             return  employeeMapper.selectByExampleWithDept(null);
         }
+
+        public int addEmp(Employee employee){
+            int result = employeeMapper.insertSelective(employee);
+            return  result;
+        }
+
 }
