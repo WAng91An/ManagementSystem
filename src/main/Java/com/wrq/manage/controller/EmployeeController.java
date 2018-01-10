@@ -60,15 +60,40 @@ public class EmployeeController {
         return Msg.success().add("pageInfo",pageInfo);
     }
 
+    /**
+     * 添加员工
+     * @param employee
+     * @return
+     */
     @RequestMapping("/emp")
     @ResponseBody
     public Msg addEmp(Employee employee){
         int result = iEmployeeService.addEmp(employee);
-        System.out.println(result);
         if(result != 0){
             return this.getEmpsWithJson(1);
         }else{
             return Msg.fail().add("errMsg","新增信息失败");
+        }
+    }
+
+    /**
+     * 检查用户名是否可用
+     * @param empName
+     * @return
+     */
+    @RequestMapping("/checkuser")
+    @ResponseBody
+    public Msg checkUser(@RequestParam("empName") String empName){
+        //合法性
+        String regx = "(^[a-zA-Z0-9_-]{6,16}$)|(^[\\u2E80-\\u9FFF]{2,5})";
+        if(!empName.matches(regx)){
+            return Msg.fail().add("va_msg","用户名必须是2-5位中文6-16位数字或者字母");
+        }
+        boolean b = iEmployeeService.checkUser(empName);
+        if(b){
+            return Msg.success();
+        }else{
+            return Msg.fail().add("va_msg","用户名已经存在");
         }
     }
 

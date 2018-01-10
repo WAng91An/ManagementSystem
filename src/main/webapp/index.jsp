@@ -235,8 +235,16 @@
         var navEle = $("<nav></nav>").append(ul);
         navEle.appendTo("#page_nav_area");
     }
-    //点击新增按钮掉模态框
+    //重置表单
+    function reset_form(ele){
+        $(ele)[0].reset();
+        $(ele).find("*").removeClass("has-error has-success");
+        $(ele).find(".help-block").text("");
+    }
+    //点击新增按钮调用模态框
     $("#emp_add_modal_btn").click(function(){
+        //表单重置
+        reset_form("#empAddModal form");
         //发送ajax请求，查出部门信息
         getDepts();
         //弹出模态框
@@ -257,7 +265,6 @@
             }
         })
     }
-
     //校验表单数据
     function validate_add_form(){
         var empName = $("#empName_add_input").val();
@@ -290,18 +297,36 @@
             $(ele).next("span").text(msg);
         }
     }
-
     //员工姓名异步验证
     $("#empName_add_input").change(function () {
-
+        var empName = this.value;
+        $.ajax({
+            url:"checkuser",
+            data:"empName="+empName,
+            type:"POST",
+            success:function(result){
+                if(result.code == 100){
+                    show_validate_msg("#empName_add_input","success","用户名可用");
+                    $("#emp_save_btn").attr("ajax-va","success");
+                }else{
+                    show_validate_msg("#empName_add_input","error",result.data.va_msg);
+                    $("#emp_save_btn").attr("ajax-va","error");
+                }
+            }
+        })
     });
     //点击保存员工按钮
     $("#emp_save_btn").click(function(){
         //1. 模态框表单数据提交给服务器进行保存
+        //2. 数据格式正确性
         if(!validate_add_form()){
             return false;
         }
-        //2. ajax请求保存
+        //3. 用户存在,ajax-va
+        if($(this).attr("ajax-va")=="error"){
+            return false;
+        }
+        //4. ajax请求保存
         $.ajax({
             url:"emp",
             type:"POST",
