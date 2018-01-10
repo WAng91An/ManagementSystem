@@ -8,11 +8,16 @@ import com.wrq.manage.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 王乾 on 2018/1/9.
@@ -62,17 +67,33 @@ public class EmployeeController {
 
     /**
      * 添加员工
+     *1. 支持JSR303校验
+     *2. 导入hibernate-validator
+     *3. bean加入patten注解
+     *4. BindingResult来获得错误信息
      * @param employee
      * @return
      */
     @RequestMapping("/emp")
     @ResponseBody
-    public Msg addEmp(Employee employee){
-        int result = iEmployeeService.addEmp(employee);
-        if(result != 0){
-            return this.getEmpsWithJson(1);
-        }else{
-            return Msg.fail().add("errMsg","新增信息失败");
+    public Msg addEmp(@Valid Employee employee, BindingResult bindingResult){
+        if(bindingResult.hasErrors()) {
+            //校验失败返回错误信息
+            Map<String ,Object> map = new HashMap<String, Object>();
+            List<FieldError> fieldErrors = bindingResult.getFieldErrors();
+            for(FieldError error : fieldErrors){
+                System.out.println("错误的字段名"+error.getField());
+                System.out.println("错误的信息"+error.getDefaultMessage());
+                map.put(error.getField(),error.getDefaultMessage());
+            }
+            return Msg.fail().add("errorFields",map);
+        }else {
+            int result = iEmployeeService.addEmp(employee);
+            if(result != 0){
+                return this.getEmpsWithJson(1);
+            }else{
+                return Msg.fail().add("errMsg","新增信息失败");
+            }
         }
     }
 

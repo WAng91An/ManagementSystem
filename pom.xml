@@ -116,6 +116,16 @@
       <version>5.0.0</version>
     </dependency>
 
+    <!--
+      303数据校验支持
+      tomcat7以下的服务器，el表达式不好，需要额外的服务器的lib彪替换显得el
+     -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>5.4.1.Final</version>
+    </dependency>
+
 
   </dependencies>
   <build>

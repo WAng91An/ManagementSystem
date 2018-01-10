@@ -25,7 +25,61 @@
     </style>
 </head>
 <body>
-<!-- 模态框 -->
+<!-- 修改模态框 -->
+<div class="modal fade" id="empUpdateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">员工修改</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="empName" class="form-control" id="empName_update_input" placeholder="输入姓名">
+                            <span  class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="email" class="form-control" id="email_update_input" placeholder="请输入邮箱">
+                            <span  class="help-block"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_add_input" class="col-sm-2 control-label">性 别</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" id="gender1_update_input" value="M" checked> 男
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="gender" id="gender2_update_input" value="F"> 女
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_add_input" class="col-sm-2 control-label">部门名</label>
+                        <div class="col-sm-3">
+                            <!-- 部门动态添加 -->
+                            <select class="form-control" name="dId" id="dept_update_select">
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="emp_update_btn">更新</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 增加模态框 -->
 <div class="modal fade" id="empAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -36,21 +90,21 @@
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="empName_add_input" class="col-sm-2 control-label">姓名</label>
+                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名</label>
                         <div class="col-sm-10">
                             <input type="text" name="empName" class="form-control" id="empName_add_input" placeholder="输入姓名">
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">邮箱</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱</label>
                         <div class="col-sm-10">
                             <input type="text" name="email" class="form-control" id="email_add_input" placeholder="请输入邮箱">
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">性别</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">性 别</label>
                         <div class="col-sm-10">
                             <label class="radio-inline">
                                 <input type="radio" name="gender" id="gender1_add_input" value="M" checked> 男
@@ -157,9 +211,9 @@
             var genderTd   = $("<td></td>").append(item.gender=="M"?"男":"女");
             var emailTd    = $("<td></td>").append(item.email);
             var deptNameTd = $("<td></td>").append(item.department.deptName);
-            var editBtn = $("<button></button>").addClass("btn btn-info btn-xs")
+            var editBtn = $("<button></button>").addClass("btn btn-info btn-xs edit_btn")
                          .append($("<span></span>").addClass("glyphicon glyphicon-pencil")).append(" ");
-            var delBtn  = $("<button></button>").addClass("btn btn-danger btn-xs")
+            var delBtn  = $("<button></button>").addClass("btn btn-danger btn-xs delete_btn")
                          .append($("<span></span>").addClass("glyphicon glyphicon-trash")).append(" ");
             var btnTd   = $("<td></td>").append(editBtn).append(" ").append(delBtn);
             $("<tr></tr>").append(empIdTd)
@@ -246,21 +300,22 @@
         //表单重置
         reset_form("#empAddModal form");
         //发送ajax请求，查出部门信息
-        getDepts();
+        getDepts("#dept_add_select");
         //弹出模态框
         $("#empAddModal").modal({
             backdrop:"static"
         });
     });
     //查出部门信息
-    function getDepts(){
+    function getDepts(ele){
+        $(ele).empty();
         $.ajax({
             url:"depts",
             type:"GET",
             success:function(result) {
                 $.each(result.data.depts, function () {
                     var optionEle = $("<option></option>").append(this.deptName).attr("value", this.deptId);
-                    optionEle.appendTo("#dept_add_select");
+                    optionEle.appendTo(ele);
                 });
             }
         })
@@ -270,7 +325,7 @@
         var empName = $("#empName_add_input").val();
         var regName =  /(^[a-zA-Z0-9_-]{6,16}$)|(^[\u2E80-\u9FFF]{2,5})/;
         if(!regName.test(empName)){
-            show_validate_msg("#empName_add_input","error","请输入2-5中文或者6-16的英文")
+            show_validate_msg("#empName_add_input","error","请输入2-5中文或者6-16的英文");
             return false;
         }else {
             show_validate_msg("#empName_add_input","success","");
@@ -319,9 +374,9 @@
     $("#emp_save_btn").click(function(){
         //1. 模态框表单数据提交给服务器进行保存
         //2. 数据格式正确性
-        if(!validate_add_form()){
-            return false;
-        }
+//        if(!validate_add_form()){
+//            return false;
+//        }
         //3. 用户存在,ajax-va
         if($(this).attr("ajax-va")=="error"){
             return false;
@@ -332,14 +387,36 @@
             type:"POST",
             data:$("#empAddModal form").serialize(),
             success: function (result) {
-                //保存成功
-                //1. 关闭模态框
-                $("#empAddModal").modal('hide');
-                //2.来最后一页
-                to_page(result.data.pageInfo.pages);
+                if(result.code == 100){
+                    //保存成功
+                    //1. 关闭模态框
+                    $("#empAddModal").modal('hide');
+                    //2.来最后一页
+                    to_page(result.data.pageInfo.pages);
+                }else {
+                    //显示失败信息
+                    if(undefined != result.data.errorFields.email){
+                         //显示邮箱错误信息
+                        show_validate_msg("#email_add_input","error",result.data.errorFields.email);
+                    }
+                    if(undefined != result.data.errorFields.empName){
+                        //显示用户名错误信息
+                        show_validate_msg("#empName_add_input","error",result.data.errorFields.empName);
+                    }
+                }
+
             }
         })
     });
+    //点击编辑
+    $(document).on("click",".edit_btn",function(){
+        //信息回填
+        getDepts("#empUpdateModal select");
+        $("#empUpdateModal").modal({
+            backdrop:"static"
+        });
+    })
+
 
 </script>
 </body>

@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7446da52-7999-40d0-84f7-9dee8c800fea" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/bean/Employee.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/bean/Employee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/IEmployeeService.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/IEmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/Impl/EmployeeService.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/Impl/EmployeeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/bean/Employee.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/bean/Employee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/IEmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/IEmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/Impl/EmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/Impl/EmployeeService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ManagementSystem_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ManagementSystem_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ManagementSystem.iml" afterPath="$PROJECT_DIR$/ManagementSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/ManagementSystem/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/index.jsp" afterPath="$PROJECT_DIR$/target/ManagementSystem/index.jsp" />
     </list>
     <ignored path="ManagementSystem.iws" />
@@ -38,64 +38,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.387096">
-              <caret line="238" column="29" selection-start-line="238" selection-start-column="29" selection-end-line="238" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.34724092">
+              <caret line="310" column="23" selection-start-line="310" selection-start-column="23" selection-end-line="310" selection-end-column="23" />
               <folding>
-                <element signature="e#5022#5396#0#HTML" expanded="false" />
-                <element signature="e#5435#6689#0#HTML" expanded="false" />
-                <element signature="e#6741#6984#0#HTML" expanded="false" />
-                <element signature="e#7039#8919#0#HTML" expanded="false" />
-                <element signature="e#9404#9786#0#HTML" expanded="false" />
-                <element signature="e#9832#10563#0#HTML" expanded="false" />
-                <element signature="e#10624#11002#0#HTML" expanded="false" />
-                <element signature="e#11065#11655#0#HTML" expanded="false" />
-                <element signature="e#11712#12333#0#HTML" expanded="false" />
+                <element signature="e#7781#7808#0#HTML" expanded="false" />
+                <element signature="e#7836#8210#0#HTML" expanded="false" />
+                <element signature="e#8249#9523#0#HTML" expanded="false" />
+                <element signature="e#9575#9818#0#HTML" expanded="false" />
+                <element signature="e#9873#11753#0#HTML" expanded="false" />
+                <element signature="e#11793#11935#0#HTML" expanded="false" />
+                <element signature="e#11998#12217#0#HTML" expanded="false" />
+                <element signature="e#12696#13428#0#HTML" expanded="false" />
+                <element signature="e#13489#13867#0#HTML" expanded="false" />
+                <element signature="e#13930#14520#0#HTML" expanded="false" />
+                <element signature="e#14577#15796#0#HTML" expanded="false" />
+                <element signature="e#15859#16004#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80878556">
-              <caret line="95" column="51" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Msg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/common/Msg.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IEmployeeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+              <caret line="72" column="29" selection-start-line="69" selection-start-column="5" selection-end-line="72" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2028#2044#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor vertical-scroll-proportion="0.14705883">
+                <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.1525426">
+              <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,49 +103,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/EmployeeExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/test/GeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -182,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/dao/EmployeeMapper.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/test/GeneratorTest.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/test/MapperTest.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/impl/EmployeeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/EmployeeServiceImpl.java" />
@@ -193,7 +160,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/EmployeeMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/test/MvcTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index-2.jsp" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/common/Msg.java" />
@@ -203,7 +169,10 @@
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/DepartmentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
@@ -256,8 +225,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="961" />
-    <option name="y" value="32" />
+    <option name="x" value="-80" />
+    <option name="y" value="37" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -613,6 +582,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagementSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ManagementSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -629,7 +628,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="datasourcetr&#9;PSI&#9;JAVA://org.springframework.jdbc.datasource.DataSourceTransactionManager" />
+    <property name="SearchEverywhereHistoryKey" value="in&#9;FILE&#9;file://D:/文档/项目/ManagementSystem/src/main/webapp/index.jsp&#10;inde&#9;FILE&#9;file://D:/文档/项目/ManagementSystem/src/main/webapp/index.jsp&#10;index&#9;FILE&#9;file://D:/文档/项目/ManagementSystem/src/main/webapp/index.jsp&#10;datasourcetr&#9;PSI&#9;JAVA://org.springframework.jdbc.datasource.DataSourceTransactionManager" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -1355,7 +1354,7 @@
       <updated>1515413151414</updated>
       <workItem from="1515413153912" duration="31736000" />
       <workItem from="1515478674915" duration="12684000" />
-      <workItem from="1515585326998" duration="5784000" />
+      <workItem from="1515585326998" duration="10302000" />
     </task>
     <servers />
   </component>
@@ -1392,10 +1391,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50204000" />
+    <option name="totallyTimeSpent" value="54722000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="961" y="32" width="1936" height="1056" extended-state="0" />
+    <frame x="-80" y="37" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1410,7 +1409,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12622416" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1439,7 +1439,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1448,14 +1448,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1525,15 +1517,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5022#5396#0#HTML" expanded="false" />
-            <element signature="e#5435#6689#0#HTML" expanded="false" />
-            <element signature="e#6741#6984#0#HTML" expanded="false" />
-            <element signature="e#7039#8919#0#HTML" expanded="false" />
-            <element signature="e#9404#9786#0#HTML" expanded="false" />
-            <element signature="e#9832#10563#0#HTML" expanded="false" />
-            <element signature="e#10624#11002#0#HTML" expanded="false" />
-            <element signature="e#11065#11655#0#HTML" expanded="false" />
-            <element signature="e#11712#12333#0#HTML" expanded="false" />
+            <element signature="e#7781#7808#0#HTML" expanded="false" />
+            <element signature="e#7836#8210#0#HTML" expanded="false" />
+            <element signature="e#8249#9523#0#HTML" expanded="false" />
+            <element signature="e#9575#9818#0#HTML" expanded="false" />
+            <element signature="e#9873#11753#0#HTML" expanded="false" />
+            <element signature="e#11793#11935#0#HTML" expanded="false" />
+            <element signature="e#11998#12217#0#HTML" expanded="false" />
+            <element signature="e#12696#13428#0#HTML" expanded="false" />
+            <element signature="e#13489#13867#0#HTML" expanded="false" />
+            <element signature="e#13930#14520#0#HTML" expanded="false" />
+            <element signature="e#14577#15796#0#HTML" expanded="false" />
+            <element signature="e#15859#16004#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1561,7 +1556,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2028#2044#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1726,7 +1723,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1736,7 +1733,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1785,14 +1782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1835,7 +1824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.47375506">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding />
         </state>
@@ -1843,7 +1832,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/test/GeneratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.22739018">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
@@ -1851,36 +1840,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.36950904">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/EmployeeExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.7390181">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/common/Msg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.49612403">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/common/Msg.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state vertical-scroll-proportion="-6.1525426">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1888,34 +1875,62 @@
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/bean/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="23" />
-          <folding />
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.387096">
-          <caret line="238" column="29" selection-start-line="238" selection-start-column="29" selection-end-line="238" selection-end-column="29" />
-          <folding>
-            <element signature="e#5022#5396#0#HTML" expanded="false" />
-            <element signature="e#5435#6689#0#HTML" expanded="false" />
-            <element signature="e#6741#6984#0#HTML" expanded="false" />
-            <element signature="e#7039#8919#0#HTML" expanded="false" />
-            <element signature="e#9404#9786#0#HTML" expanded="false" />
-            <element signature="e#9832#10563#0#HTML" expanded="false" />
-            <element signature="e#10624#11002#0#HTML" expanded="false" />
-            <element signature="e#11065#11655#0#HTML" expanded="false" />
-            <element signature="e#11712#12333#0#HTML" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80878556">
-          <caret line="95" column="51" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="29" selection-start-line="69" selection-start-column="5" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="e#2028#2044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor vertical-scroll-proportion="0.14705883">
+            <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34724092">
+          <caret line="310" column="23" selection-start-line="310" selection-start-column="23" selection-end-line="310" selection-end-column="23" />
+          <folding>
+            <element signature="e#7781#7808#0#HTML" expanded="false" />
+            <element signature="e#7836#8210#0#HTML" expanded="false" />
+            <element signature="e#8249#9523#0#HTML" expanded="false" />
+            <element signature="e#9575#9818#0#HTML" expanded="false" />
+            <element signature="e#9873#11753#0#HTML" expanded="false" />
+            <element signature="e#11793#11935#0#HTML" expanded="false" />
+            <element signature="e#11998#12217#0#HTML" expanded="false" />
+            <element signature="e#12696#13428#0#HTML" expanded="false" />
+            <element signature="e#13489#13867#0#HTML" expanded="false" />
+            <element signature="e#13930#14520#0#HTML" expanded="false" />
+            <element signature="e#14577#15796#0#HTML" expanded="false" />
+            <element signature="e#15859#16004#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
