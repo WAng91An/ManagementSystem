@@ -39,12 +39,14 @@
                         <label for="empName_add_input" class="col-sm-2 control-label">姓名</label>
                         <div class="col-sm-10">
                             <input type="text" name="empName" class="form-control" id="empName_add_input" placeholder="输入姓名">
+                            <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="email_add_input" class="col-sm-2 control-label">邮箱</label>
                         <div class="col-sm-10">
                             <input type="text" name="email" class="form-control" id="email_add_input" placeholder="请输入邮箱">
+                            <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -256,9 +258,49 @@
         })
     }
 
-    //点击保存按钮
+    //校验表单数据
+    function validate_add_form(){
+        var empName = $("#empName_add_input").val();
+        var regName =  /(^[a-zA-Z0-9_-]{6,16}$)|(^[\u2E80-\u9FFF]{2,5})/;
+        if(!regName.test(empName)){
+            show_validate_msg("#empName_add_input","error","请输入2-5中文或者6-16的英文")
+            return false;
+        }else {
+            show_validate_msg("#empName_add_input","success","");
+        }
+        var email = $("#email_add_input").val();
+        var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+        if(!regEmail.test(email)){
+            show_validate_msg("#email_add_input","error","邮箱格式不正确");
+            return false;
+        }else{
+            show_validate_msg("#email_add_input","success","");
+        }
+        return true;
+    }
+    //显示检验的信息
+    function show_validate_msg(ele,status,msg){
+        $(ele).parent().removeClass("has-success has-error");
+        $(ele).next("span").text("");
+        if("success" == status){
+            $(ele).parent().addClass("has-success");
+            $(ele).next("span").text(msg);
+        }else  if("error" == status){
+            $(ele).parent().addClass("has-error");
+            $(ele).next("span").text(msg);
+        }
+    }
+
+    //员工姓名异步验证
+    $("#empName_add_input").change(function () {
+
+    });
+    //点击保存员工按钮
     $("#emp_save_btn").click(function(){
         //1. 模态框表单数据提交给服务器进行保存
+        if(!validate_add_form()){
+            return false;
+        }
         //2. ajax请求保存
         $.ajax({
             url:"emp",
