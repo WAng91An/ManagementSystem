@@ -14,4 +14,6 @@ public interface IEmployeeService {
     public int addEmp(Employee employee);
 
     boolean checkUser(String empName);
+
+    public Employee getEmp(Integer id);
 }

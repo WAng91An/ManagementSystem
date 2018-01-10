@@ -17,8 +17,23 @@ public class EmployeeService implements IEmployeeService {
     @Autowired
     private EmployeeMapper employeeMapper;
 
+    /**
+     * 查询所有的员工信息
+     * @return
+     */
     public List<Employee> getAll(){
         return  employeeMapper.selectByExampleWithDept(null);
+    }
+
+    /**
+     * 根据id查员工信息
+     * @param id
+     * @return
+     */
+    public Employee getEmp(Integer id){
+
+        Employee employee = employeeMapper.selectByPrimaryKey(id);
+        return employee;
     }
 
     /**

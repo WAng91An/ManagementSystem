@@ -36,21 +36,21 @@
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名</label>
+                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名:</label>
                         <div class="col-sm-10">
-                            <input type="text" name="empName" class="form-control" id="empName_update_input" placeholder="输入姓名">
+                            <p class="form-control-static" id="empName_update_static"></p>
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱:</label>
                         <div class="col-sm-10">
                             <input type="text" name="email" class="form-control" id="email_update_input" placeholder="请输入邮箱">
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">性 别</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">性 别:</label>
                         <div class="col-sm-10">
                             <label class="radio-inline">
                                 <input type="radio" name="gender" id="gender1_update_input" value="M" checked> 男
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">部门名</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">部门名:</label>
                         <div class="col-sm-3">
                             <!-- 部门动态添加 -->
                             <select class="form-control" name="dId" id="dept_update_select">
@@ -90,21 +90,21 @@
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名</label>
+                        <label for="empName_add_input" class="col-sm-2 control-label">姓 名:</label>
                         <div class="col-sm-10">
                             <input type="text" name="empName" class="form-control" id="empName_add_input" placeholder="输入姓名">
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">邮 箱:</label>
                         <div class="col-sm-10">
                             <input type="text" name="email" class="form-control" id="email_add_input" placeholder="请输入邮箱">
                             <span  class="help-block"></span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">性 别</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">性 别:</label>
                         <div class="col-sm-10">
                             <label class="radio-inline">
                                 <input type="radio" name="gender" id="gender1_add_input" value="M" checked> 男
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email_add_input" class="col-sm-2 control-label">部门名</label>
+                        <label for="email_add_input" class="col-sm-2 control-label">部门名:</label>
                         <div class="col-sm-3">
                             <!-- 部门动态添加 -->
                             <select class="form-control" name="dId" id="dept_add_select">
@@ -200,7 +200,7 @@
             }
         });
     }
-
+    //解析表
     function build_emps_table(result){
         //清空表格
         $("#emps_table tbody").empty();
@@ -213,6 +213,7 @@
             var deptNameTd = $("<td></td>").append(item.department.deptName);
             var editBtn = $("<button></button>").addClass("btn btn-info btn-xs edit_btn")
                          .append($("<span></span>").addClass("glyphicon glyphicon-pencil")).append(" ");
+            editBtn.attr("edit-id",item.empId);
             var delBtn  = $("<button></button>").addClass("btn btn-danger btn-xs delete_btn")
                          .append($("<span></span>").addClass("glyphicon glyphicon-trash")).append(" ");
             var btnTd   = $("<td></td>").append(editBtn).append(" ").append(delBtn);
@@ -412,11 +413,26 @@
     $(document).on("click",".edit_btn",function(){
         //信息回填
         getDepts("#empUpdateModal select");
+        getEmp($(this).attr("edit-id"));
         $("#empUpdateModal").modal({
             backdrop:"static"
         });
     })
-
+    //查询员工
+    function getEmp(id){
+        $.ajax({
+            url:"emp/"+id,
+            type:"GET",
+            success:function(result){
+                var empDate = result.data.emp;
+                $("#empName_update_static").text(empDate.empName);
+                $("#email_update_input").val(empDate.email);
+                //放在[]的选中
+                $("#empUpdateModal input[name=gender]").val([empDate.gender]);
+                $("#empUpdateModal select").val([empDate.dId]);
+            }
+        })
+    }
 
 </script>
 </body>
