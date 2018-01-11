@@ -33,6 +33,25 @@ public class EmployeeService implements IEmployeeService {
         employeeMapper.updateByPrimaryKeySelective(employee);
     }
 
+    /**
+     * 员工删除
+     * @param id
+     */
+    public void deleteEmp(Integer id){
+        employeeMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 批量删除
+     * @param ids
+     */
+    public void deleteBatch(List<Integer> ids){
+        EmployeeExample example = new EmployeeExample();
+        EmployeeExample.Criteria criteria = example.createCriteria();
+        //delete from table where emp_id in(1,2,3)
+        criteria.andEmpIdIn(ids);
+        employeeMapper.deleteByExample(example);
+    }
 
     /**
      * 根据id查员工信息

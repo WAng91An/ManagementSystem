@@ -9,13 +9,17 @@ import java.util.List;
  */
 public interface IEmployeeService {
 
-    public List<Employee> getAll();
+     List<Employee> getAll();
 
-    public int addEmp(Employee employee);
+     int addEmp(Employee employee);
 
     boolean checkUser(String empName);
 
-    public Employee getEmp(Integer id);
+     Employee getEmp(Integer id);
 
-    public void updateEmp(Employee employee);
+     void updateEmp(Employee employee);
+
+     void deleteEmp(Integer id);
+
+     void deleteBatch(List<Integer> ids);
 }

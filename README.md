@@ -14,7 +14,18 @@
 
 ### 传统页面跳转(list.jsp index-normal.jsp)
 ### ajax方式渲染(index.jsp)
-代码结构：
+查询员工：
+出现页面请求不合理解决方案(出现-1页)
+```
+    <!--引入分页插件-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--分页合理化-->
+            <property name="reasonable" value="true"/>
+        </plugin>
+    </plugins>
+    
+```
 
 
 增加员工
@@ -68,8 +79,7 @@
   - 提交的数据只有empId字段，提交的email等都为空，绑定不上Employee
   - 更新语句的时候除了主建都为空，报错
 - 原因:
-  - Tomcat:
-  1. 将请求体中的数据封装成一个map
+  1. tomcat将请求体中的数据封装成一个map
   2. request.getParameter("email")传统取值
   3. springMvc 封装的pojo对象的时候把pojo每个属性的值，进行request.getParameter()
 - 解决：
@@ -91,3 +101,6 @@
 上面过滤器的作用：把请求体重的数据解析包装成一个map，request被重新包装，request.getParameter()从自己的map取数据.
 【注】
     更新要用updateByPrimaryKeySelective，否则传的name是空的报错！
+    
+删除员工
+    单个和批量删除，通过传的参数不同来执行不同的数据库操作！

@@ -13,6 +13,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,6 +31,31 @@ public class EmployeeController {
     @Autowired
     private IEmployeeService iEmployeeService;
 
+    /**
+     * 单个，多个删除批量
+     * ids:1-5-6-8
+     * ids:1
+     * @param
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/emp/{ids}",method = RequestMethod.DELETE)
+    public Msg deleteEmpById(@PathVariable("ids")String ids){
+        //批量删除
+        if(ids.contains("-")){
+            List<Integer> del_ids = new ArrayList<Integer>();
+            String[] str_ids = ids.split("-");
+            for (String string : str_ids){
+                del_ids.add(Integer.parseInt(string));
+            }
+            iEmployeeService.deleteBatch(del_ids);
+        }else {
+            Integer id =  Integer.parseInt(ids);
+            iEmployeeService.deleteEmp(id);
+        }
+
+        return  Msg.success();
+    }
     /**
      * 更新员工
      * @param employee
