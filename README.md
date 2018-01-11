@@ -2,16 +2,12 @@
 ### SSM实现的增删改查的方法
 分别实现了传统跳转页面的方法，然后演进成了ajax方式
 页面：
-
-![index.png](.\png\index.png)
-
-![add.png](.\png\add.png)
-
-![update.png](.\png\update.png)
-
-![结构.png](.\png\结构.png)
-
-
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/add.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/index.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/update.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/结构.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/delete.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/deleteAll.png?raw=true)
 ### 传统页面跳转(list.jsp index-normal.jsp)
 ### ajax方式渲染(index.jsp)
 查询员工：
@@ -98,9 +94,9 @@
       </filter-mapping>
       
 ```
-上面过滤器的作用：把请求体重的数据解析包装成一个map，request被重新包装，request.getParameter()从自己的map取数据.
+- 上面过滤器的作用：把请求体重的数据解析包装成一个map，request被重新包装，request.getParameter()从自己的map取数据.
 【注】
     更新要用updateByPrimaryKeySelective，否则传的name是空的报错！
     
-删除员工
+- 删除员工
     单个和批量删除，通过传的参数不同来执行不同的数据库操作！

@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7446da52-7999-40d0-84f7-9dee8c800fea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/IEmployeeService.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/IEmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/Impl/EmployeeService.class" afterPath="$PROJECT_DIR$/target/ManagementSystem/WEB-INF/classes/com/wrq/manage/service/Impl/EmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/IEmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/IEmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/Impl/EmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/wrq/manage/service/Impl/EmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/controller/EmployeeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/IEmployeeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java" afterPath="$PROJECT_DIR$/src/main/Java/com/wrq/manage/service/Impl/EmployeeService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ManagementSystem/index.jsp" afterPath="$PROJECT_DIR$/target/ManagementSystem/index.jsp" />
     </list>
     <ignored path="ManagementSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +29,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1111112">
+            <state vertical-scroll-proportion="0.0">
               <caret line="502" column="24" selection-start-line="502" selection-start-column="24" selection-end-line="502" selection-end-column="24" />
               <folding />
             </state>
@@ -52,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor vertical-scroll-proportion="0.915601">
-                <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+              <first_editor vertical-scroll-proportion="0.19693094">
+                <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -69,8 +57,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
               <folding>
-                <element signature="e#1178#1187#0" expanded="true" />
-                <element signature="e#3239#3255#0" expanded="true" />
                 <element signature="method#getEmps#0;class#EmployeeController#0" expanded="false" />
               </folding>
             </state>
@@ -217,8 +203,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-313" />
-    <option name="y" value="51" />
+    <option name="x" value="133" />
+    <option name="y" value="40" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -296,6 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -494,8 +482,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1235,6 +1221,7 @@
       <workItem from="1515413153912" duration="31736000" />
       <workItem from="1515478674915" duration="12684000" />
       <workItem from="1515585326998" duration="24745000" />
+      <workItem from="1515670300700" duration="554000" />
     </task>
     <servers />
   </component>
@@ -1271,11 +1258,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69165000" />
+    <option name="totallyTimeSpent" value="69719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-313" y="51" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="133" y="40" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1286,11 +1273,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36887923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="5.2083336E-4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08922742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08922742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1340,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,10 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding>
-            <element signature="e#1344#1345#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1415,7 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,8 +1404,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <element signature="e#1178#1187#0" expanded="true" />
-            <element signature="e#3239#3255#0" expanded="true" />
             <element signature="method#getEmps#0;class#EmployeeController#0" expanded="false" />
           </folding>
         </state>
@@ -1451,7 +1429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1467,7 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1511,10 +1486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#281#282#0" expanded="false" />
-            <element signature="e#304#305#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1529,9 +1500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1539,16 +1507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.495614">
           <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <marker date="1515424078231" expanded="true" signature="3297:3406" placeholder="select from dept" />
-            <marker date="1515424078231" expanded="true" signature="3492:3555" placeholder="delete from " />
-            <marker date="1515424078231" expanded="true" signature="3658:3674" placeholder="delete from " />
-            <marker date="1515424078231" expanded="true" signature="3853:3960" placeholder="insert into dept... " />
-            <marker date="1515424078231" expanded="true" signature="4633:4658" placeholder="select count... dept" />
-            <marker date="1515424078231" expanded="true" signature="5247:5365" placeholder="update dept " />
-            <marker date="1515424078231" expanded="true" signature="5575:5751" placeholder="update dept " />
-            <marker date="1515424078231" expanded="true" signature="5850:5957" placeholder="update dept " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,7 +1514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="231" column="16" selection-start-line="231" selection-start-column="16" selection-end-line="231" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,10 +1521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding>
-            <element signature="e#1344#1345#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1583,7 +1536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.2580647">
           <caret line="79" column="12" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1609,7 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,27 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.806452">
           <caret line="147" column="9" selection-start-line="147" selection-start-column="3" selection-end-line="147" selection-end-column="9" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#select#4;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1515470598804" expanded="true" signature="4291:4445" placeholder="select from emp" />
-            <marker date="1515470598804" expanded="true" signature="4966:5072" placeholder="select from emp" />
-            <marker date="1515470598804" expanded="true" signature="5158:5218" placeholder="delete from " />
-            <marker date="1515470598804" expanded="true" signature="5319:5334" placeholder="delete from " />
-            <marker date="1515470598804" expanded="true" signature="5511:5725" placeholder="insert into emp... " />
-            <marker date="1515470598804" expanded="true" signature="6793:6817" placeholder="select count... emp" />
-            <marker date="1515470598804" expanded="true" signature="7697:7950" placeholder="update emp s... " />
-            <marker date="1515470598804" expanded="true" signature="8158:8584" placeholder="update emp e... " />
-            <marker date="1515470598804" expanded="true" signature="8681:8902" placeholder="update emp s... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1645,7 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,7 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22739018">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1669,7 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7390181">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1677,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49612403">
           <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1709,9 +1635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19059406">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1765,8 +1688,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#1178#1187#0" expanded="true" />
-            <element signature="e#3239#3255#0" expanded="true" />
             <element signature="method#getEmps#0;class#EmployeeController#0" expanded="false" />
           </folding>
         </state>
@@ -1774,7 +1695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1111112">
+        <state vertical-scroll-proportion="0.0">
           <caret line="502" column="24" selection-start-line="502" selection-start-column="24" selection-end-line="502" selection-end-column="24" />
           <folding />
         </state>
@@ -1783,8 +1704,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor vertical-scroll-proportion="0.915601">
-            <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+          <first_editor vertical-scroll-proportion="0.19693094">
+            <caret line="7" column="77" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
             <folding />
           </first_editor>
           <second_editor>
