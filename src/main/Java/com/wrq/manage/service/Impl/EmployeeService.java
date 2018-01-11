@@ -26,6 +26,15 @@ public class EmployeeService implements IEmployeeService {
     }
 
     /**
+     * 员工更新
+     * @param employee
+     */
+    public void updateEmp(Employee employee){
+        employeeMapper.updateByPrimaryKeySelective(employee);
+    }
+
+
+    /**
      * 根据id查员工信息
      * @param id
      * @return

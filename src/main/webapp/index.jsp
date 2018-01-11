@@ -38,7 +38,7 @@
                     <div class="form-group">
                         <label for="empName_add_input" class="col-sm-2 control-label">姓 名:</label>
                         <div class="col-sm-10">
-                            <p class="form-control-static" id="empName_update_static"></p>
+                            <p class="form-control-static" name="empName" id="empName_update_static"></p>
                             <span  class="help-block"></span>
                         </div>
                     </div>
@@ -180,7 +180,8 @@
     </div>
 </div>
 <script type="text/javascript">
-//1.页面加载完成后直接去发ajax请求
+    var totalRecord,currentPage;
+    //1.页面加载完成后直接去发ajax请求
     $(function(pn){
         to_page(1);
     });
@@ -233,6 +234,8 @@
                 result.data.pageInfo.pageNum+"页,总共"+
                 result.data.pageInfo.pages+"页，总共"+
                 result.data.pageInfo.total+"条记录");
+        totalRecord = result.data.pageInfo.total;
+        currentPage = result.data.pageInfo.pageNum;
     }
     //解析显示分页条,点击事件
     function build_page_nav(result){
@@ -375,9 +378,9 @@
     $("#emp_save_btn").click(function(){
         //1. 模态框表单数据提交给服务器进行保存
         //2. 数据格式正确性
-//        if(!validate_add_form()){
-//            return false;
-//        }
+        if(!validate_add_form()){
+            return false;
+        }
         //3. 用户存在,ajax-va
         if($(this).attr("ajax-va")=="error"){
             return false;
@@ -407,13 +410,16 @@
                 }
 
             }
-        })
+        });
+        to_page(totalRecord);
     });
     //点击编辑
     $(document).on("click",".edit_btn",function(){
         //信息回填
         getDepts("#empUpdateModal select");
         getEmp($(this).attr("edit-id"));
+        //员工id传递给模态框更新按钮
+        $("#emp_update_btn").attr("edit-id",$(this).attr("edit-id"));
         $("#empUpdateModal").modal({
             backdrop:"static"
         });
@@ -433,6 +439,29 @@
             }
         })
     }
+    //点击更新，更新员工信息
+    $("#emp_update_btn").click(function () {
+        //校验邮箱信息
+        var email = $("#email_update_input").val();
+        var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+        if(!regEmail.test(email)){
+            show_validate_msg("#email_update_input","error","邮箱格式不正确");
+            return false;
+        }else{
+            show_validate_msg("#email_update_input","success","");
+        }
+        //发送ajax请求，更新数据
+        $.ajax({
+            url:"emp/"+$(this).attr("edit-id"),
+            type:"PUT",
+            data:$("#empUpdateModal form").serialize(),
+            success: function () {
+                $("#empUpdateModal").modal('hide');
+                to_page(currentPage);
+            }
+        })
+    });
+
 
 </script>
 </body>

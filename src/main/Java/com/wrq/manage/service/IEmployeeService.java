@@ -16,4 +16,6 @@ public interface IEmployeeService {
     boolean checkUser(String empName);
 
     public Employee getEmp(Integer id);
+
+    public void updateEmp(Employee employee);
 }

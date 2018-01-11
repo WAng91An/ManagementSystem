@@ -30,6 +30,22 @@ public class EmployeeController {
     @Autowired
     private IEmployeeService iEmployeeService;
 
+    /**
+     * 更新员工
+     * @param employee
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "/emp/{empId}",method = RequestMethod.PUT)
+    public Msg saveEmp(Employee employee){
+        iEmployeeService.updateEmp(employee);
+        return  Msg.success();
+    }
+    /**
+     * 根据id查询员工
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "/emp/{id}",method = RequestMethod.GET)
     @ResponseBody
     public Msg getEmp(@PathVariable("id") Integer id){
@@ -100,6 +116,7 @@ public class EmployeeController {
             }
         }
     }
+
 
     /**
      * 检查用户名是否可用
