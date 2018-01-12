@@ -5,9 +5,9 @@
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/add.png?raw=true)
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/index.png?raw=true)
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/update.png?raw=true)
-![](https://github.com/WAng91An/ManagementSystem/blob/master/png/结构.png?raw=true)
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/delete.png?raw=true)
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/deleteAll.png?raw=true)
+![](https://github.com/WAng91An/ManagementSystem/blob/master/png/结构.png?raw=true)
 ### 传统页面跳转(list.jsp index-normal.jsp)
 ### ajax方式渲染(index.jsp)
 查询员工：
