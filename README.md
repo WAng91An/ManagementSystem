@@ -1,5 +1,4 @@
 # ManagementSystem
-# permission
 [![](https://img.shields.io/badge/JDK-1.8-brightgreen.svg)]()
 [![](https://img.shields.io/hexpm/l/plug.svg)]()
 [![](https://img.shields.io/badge/maven-v4.0.0-blue.svg)](http://maven.apache.org/)
