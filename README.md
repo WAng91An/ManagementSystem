@@ -1,4 +1,10 @@
 # ManagementSystem
+# permission
+[![](https://img.shields.io/badge/JDK-1.8-brightgreen.svg)]()
+[![](https://img.shields.io/hexpm/l/plug.svg)]()
+[![](https://img.shields.io/badge/maven-v4.0.0-blue.svg)](http://maven.apache.org/)
+[![](https://img.shields.io/badge/springframework-v4.0.0-orange.svg)](http://spring.io/projects)
+[![](https://img.shields.io/badge/developer-WAng91An-red.svg)](https://github.com/WAng91An)
 ### SSM实现的增删改查的方法
 分别实现了传统跳转页面的方法，然后演进成了ajax方式
 页面：
