@@ -36,13 +36,13 @@
 
     - 批量删除
 
-### 技术栈
+### 核心技术栈
 
-- Java高级技术:hibernate-validator,JSR303
+项目框架：Spring/Spring MVC/Mybatis
 
-- 框架:Spring,Spring Mvc ,Mybatis，bootstrap
+基础工具：Maven/Tomcat/MySQL/JDK1.8
 
-- 前端:html.css.js,jquery
+前端技术：jQuery/Bootstrap/Ajax
 
-- 数据交换:ajax,mysql
+其他技术：Java高级技术/Hibernate-validator/ JSR303/ Jackson
 
