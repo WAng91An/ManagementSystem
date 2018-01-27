@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/maven-v4.0.0-blue.svg)](http://maven.apache.org/)
 [![](https://img.shields.io/badge/springframework-v4.0.0-orange.svg)](http://spring.io/projects)
 [![](https://img.shields.io/badge/developer-WAng91An-red.svg)](https://github.com/WAng91An)
-### SSM实现增删改查(RESTful风格
+### SSM实现增删改查(RESTful风格)
 分别实现了传统跳转页面的方法，然后演进成了ajax方式
 页面：
 ![](https://github.com/WAng91An/ManagementSystem/blob/master/png/add.png?raw=true)
