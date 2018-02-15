@@ -46,3 +46,8 @@
 
 其他技术：Java高级技术/Hibernate-validator/ JSR303/ Jackson
 
+### 联系我
+
+更多项目资源，sql文件请关注公众号：Web项目聚集地
+
+![](https://github.com/WAng91An/ManagementSystem/blob/master/二维码.jpg)
